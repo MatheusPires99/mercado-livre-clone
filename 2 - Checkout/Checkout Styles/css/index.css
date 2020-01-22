@@ -1,0 +1,232 @@
+html, body {
+  height: 100%;
+  background-color: #f7f7f7;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+main input, main label {
+  font-size: 16px;
+}
+
+.main-container {
+  height: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-checkout-form {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  padding-top: 40px;
+}
+.main-checkout-form .checkout-div {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.main-checkout-form .checkout-div:not(:last-child) {
+  margin-bottom: 50px;
+}
+.main-checkout-form .checkout-div .checkout-title {
+  margin-bottom: 35px;
+}
+.main-checkout-form .checkout-div .checkout-title h1 {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+.main-checkout-form .checkout-div .checkout-subtitle h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.main-checkout-form .checkout-div .input-content {
+  margin-bottom: 20px;
+}
+.main-checkout-form .checkout-div .checkout-double-input {
+  display: flex;
+}
+.main-checkout-form .checkout-div .checkout-double-input div:nth-child(1) {
+  margin-right: 30px;
+}
+.main-checkout-form .checkout-div .input-large-width {
+  width: 75%;
+}
+.main-checkout-form .checkout-div .input-small-width {
+  width: 250px;
+}
+.main-checkout-form .checkout-div .form-action {
+  float: right;
+  margin-top: 30px;
+}
+.main-checkout-form .send-to-other-address a {
+  color: #2979FF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.main-checkout-form .send-to-other-address a:hover {
+  text-decoration: underline;
+}
+.main-checkout-form .inputs-container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 160px;
+}
+.main-checkout-form .radio-button-container input {
+  display: none;
+}
+.main-checkout-form .radio-button-container input:checked ~ .radio-button-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-left: 0.22222em solid #3483fa;
+}
+.main-checkout-form .radio-button-container input:checked ~ .radio-button-content i {
+  color: #3483fa;
+}
+.main-checkout-form .radio-button-container .radio-button-content {
+  display: flex;
+  border-radius: 3px;
+  padding: 15px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.25s;
+}
+.main-checkout-form .radio-button-container .radio-button-content:hover {
+  background-color: #f5f5f5;
+}
+.main-checkout-form .radio-button-container .radio-button-content i {
+  align-self: center;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.main-order-summary {
+  width: 35%;
+  height: 100%;
+  margin-left: 40px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding-top: 20px;
+}
+.main-order-summary .summary-div {
+  display: flex;
+  flex-direction: column;
+}
+.main-order-summary .summary-div .summary-title {
+  margin-bottom: 25px;
+  padding: 40px 40px 0 40px;
+}
+.main-order-summary .summary-div .summary-title h1 {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+.main-order-summary .summary-div .summary-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.main-order-summary .summary-div .summary-container .order-content {
+  display: flex;
+  padding: 10px;
+}
+.main-order-summary .summary-div .summary-container .order-content .order-image {
+  margin-right: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.main-order-summary .summary-div .summary-container .order-content .order-image img {
+  width: 75px;
+}
+.main-order-summary .summary-div .summary-container .order-content .order-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-order-summary .summary-div .summary-container .order-content .order-product .order-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-order-summary .summary-div .summary-container .order-content .order-product .order-info .info-details-1 {
+  display: flex;
+}
+.main-order-summary .summary-div .summary-container .order-content .order-product .order-info .info-details-1 .product-quantity {
+  display: flex;
+  text-decoration: underline;
+  margin-right: 5px;
+  font-weight: 400;
+}
+.main-order-summary .summary-div .summary-container .order-content .order-product .order-info .info-details-1 .product-one-unity-price {
+  font-weight: 300;
+  font-size: 13px;
+}
+.main-order-summary .summary-div .summary-container .order-content .order-product .order-info .info-delete button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.main-order-summary .summary-div .summary-container .order-content .order-product .order-info .info-delete button i {
+  font-size: 18px;
+  color: #aaa;
+  transition: color 0.25s;
+}
+.main-order-summary .summary-div .summary-container .order-content .order-product .order-info .info-delete button i:hover {
+  color: #E53935;
+}
+.main-order-summary .summary-div .order-price {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  margin-top: 20px;
+}
+.main-order-summary .summary-div .order-price div {
+  margin-bottom: 8px;
+}
+.main-order-summary .summary-div .order-price .order-subtotal,
+.main-order-summary .summary-div .order-price .order-freight,
+.main-order-summary .summary-div .order-price .order-total {
+  display: flex;
+  justify-content: space-between;
+}
+.main-order-summary .summary-div .order-price .order-subtotal,
+.main-order-summary .summary-div .order-price .order-freight {
+  font-weight: 300;
+}
+.main-order-summary .summary-div .order-price .order-total {
+  font-weight: 500;
+  font-size: 18px;
+}
+.main-order-summary .summary-div .summary-action {
+  padding: 20px 40px 40px 40px;
+}
+.main-order-summary .summary-div .summary-action button {
+  width: 100%;
+  font-size: 18px;
+  padding: 15px 32px;
+}
+
+footer {
+  width: 100%;
+  background-color: #fff;
+  font-size: 13px;
+}
+footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=index.css.map */

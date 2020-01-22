@@ -1,0 +1,110 @@
+.product-recommendations-section {
+
+    .recommendations-carousel {     
+        position: relative;
+        height: 300px;
+        width: 100%;
+        margin-left: -10px;
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            border: none;
+            border-radius: 32px;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+            background-color: #fff;
+            cursor: pointer;
+            outline: none;
+            z-index: 2;
+            transform: translateY(-50%);
+            transition: box-shadow 0.25s;
+
+            &:hover {
+                box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.1); 
+            }
+
+            i {
+                font-size: 30px;
+                color: #2979FF;
+            }
+        }
+
+        .carousel-button-left {
+            left: -14px;
+        }
+
+        .carousel-button-right {
+            right: -23px;
+        }
+
+        .carousel-track-container {
+            height: 100%;
+            overflow: hidden;
+
+            .carousel-track {
+                position: relative;
+                height: 100%;
+                transition: transform 0.25s ease-in;
+
+                .carousel-slide {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+                    display: flex;
+                    margin-left: 10px;
+                    margin-right: 10px;
+
+                    a {
+                        margin-right: 10px;
+
+                        &:hover > .product-card {   
+                            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+                            border: 2px solid #2979FF;
+                        }
+
+                        .product-card {
+                            display: flex;
+                            flex-direction: column;
+                            width: fit-content;
+                            height: 300px !important;
+                            border: 1px solid #ddd;
+                            background-color: #fff;
+                            padding: 10px;
+                            border-radius: 3px;
+                            transition: box-shadow 0.25s, border 0.1s;
+
+                            .carousel-img-container {
+                                height: 167px !important;
+                                align-self: center;
+                                position: relative;
+
+                                .carousel-image {
+                                    width: 150px;
+                                    padding-bottom: 10px;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    -ms-transform: translate(-50%, -50%);
+                                    transform: translate(-50%, -50%);
+                                }
+                            }
+
+                            .product-card-price {
+                                font-size: 1.3em;
+                                border-top: 1px solid #ddd;
+                                padding-top: 10px;
+                                margin-bottom: 10px;
+                            }
+
+                            .product-card-name {
+                                opacity: 0.6;
+                                font-size: 0.85em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

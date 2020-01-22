@@ -1,0 +1,38 @@
+.checkout-delivery-methods {
+    display: flex;
+    flex-direction: column;
+
+    .delivery-methods-container {
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .methods-data {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .method-information {
+                display: flex;
+
+                img {
+                    width: 80px;
+                    margin-bottom: 5px;
+                }
+
+                .method-time {
+                    span:nth-child(2) {
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .method-price {
+                font-size: 20px;
+            }
+        }
+    }
+}

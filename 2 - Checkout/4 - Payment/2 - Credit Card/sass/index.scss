@@ -1,0 +1,22 @@
+.credit-card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit-card-inputs-container {
+    width: 300px;
+    padding-right: 0px !important;
+
+    .input-content {
+        width: 100% !important;
+        
+        label {
+            white-space: nowrap;
+            
+        }
+
+        input {
+            text-transform: uppercase;
+        }
+    }
+}

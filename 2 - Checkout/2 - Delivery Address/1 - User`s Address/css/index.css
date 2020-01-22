@@ -1,0 +1,26 @@
+.checkout-registered-address {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.checkout-registered-address .registered-address-container {
+  flex: 1 0 33%;
+}
+.checkout-registered-address .registered-address-container:nth-of-type(odd) {
+  margin-right: 10px;
+}
+.checkout-registered-address .address-data {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+.checkout-registered-address .address-data div:nth-child(1) {
+  font-weight: 400;
+}
+.checkout-registered-address .address-data div:nth-child(2),
+.checkout-registered-address .address-data div:nth-child(3) {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=index.css.map */

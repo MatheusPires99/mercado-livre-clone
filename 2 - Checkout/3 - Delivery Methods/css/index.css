@@ -1,0 +1,29 @@
+.checkout-delivery-methods {
+  display: flex;
+  flex-direction: column;
+}
+.checkout-delivery-methods .delivery-methods-container:not(:last-child) {
+  margin-bottom: 20px;
+}
+.checkout-delivery-methods .delivery-methods-container .methods-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.checkout-delivery-methods .delivery-methods-container .methods-data .method-information {
+  display: flex;
+}
+.checkout-delivery-methods .delivery-methods-container .methods-data .method-information img {
+  width: 80px;
+  margin-bottom: 5px;
+}
+.checkout-delivery-methods .delivery-methods-container .methods-data .method-information .method-time span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 300;
+}
+.checkout-delivery-methods .delivery-methods-container .methods-data .method-price {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */

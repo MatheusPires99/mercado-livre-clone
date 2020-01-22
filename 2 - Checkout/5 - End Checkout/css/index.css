@@ -1,0 +1,75 @@
+.delivery-details-container,
+.payment-details-container {
+  display: flex;
+  flex-direction: column;
+}
+.delivery-details-container .details-container,
+.payment-details-container .details-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 20px 32px;
+  border-radius: 3px;
+}
+.delivery-details-container .details-container:not(:last-child),
+.payment-details-container .details-container:not(:last-child) {
+  margin-bottom: 10px;
+}
+.delivery-details-container .details-container .details-content,
+.payment-details-container .details-container .details-content {
+  display: flex;
+  align-items: center;
+}
+.delivery-details-container .details-container .details-content .icon,
+.payment-details-container .details-container .details-content .icon {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 32px;
+  margin-right: 20px;
+}
+.delivery-details-container .details-container .details-content .icon i,
+.payment-details-container .details-container .details-content .icon i {
+  font-size: 22px;
+  color: #2979FF;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.delivery-details-container .details-container .details-content .info,
+.payment-details-container .details-container .details-content .info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.delivery-details-container .details-container .details-content .info .info-title,
+.payment-details-container .details-container .details-content .info .info-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+.delivery-details-container .details-container .details-content .info-body,
+.payment-details-container .details-container .details-content .info-body {
+  font-weight: 300;
+}
+.delivery-details-container .details-container .action,
+.payment-details-container .details-container .action {
+  align-self: center;
+}
+.delivery-details-container .details-container .action a,
+.payment-details-container .details-container .action a {
+  color: #2979FF;
+}
+.delivery-details-container .details-container .action a:hover,
+.payment-details-container .details-container .action a:hover {
+  text-decoration: underline;
+}
+
+.delivery-details-container {
+  margin-bottom: 35px;
+}
+
+/*# sourceMappingURL=index.css.map */

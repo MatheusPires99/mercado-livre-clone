@@ -1,0 +1,1887 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+/*
+    Esse arquivo possui todas as definições de cores predefinidas para o desenvolvimento de templates.
+    Uma vez que o site esteja pronto, as corres do site forem decididas, o arquivo pode ser compilado,
+    removendo as corres não utilizadas.
+
+    Programdor      : Vicente Cesar, Matheus Pires
+    Nome da plaheta : Material desing
+*/
+/***********************************************************************************************************
+    Paleta de cores
+************************************************************************************************************/
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep-purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Gray */
+/* Blue Gray */
+/* Black */
+/* White */
+.alert-primary {
+  background-color: #2979FF;
+  color: #FFFFFF;
+}
+
+.alert-secondary {
+  background-color: #757575;
+  color: #FFFFFF;
+}
+
+.alert-success {
+  background-color: #00C853;
+  color: #FFFFFF;
+}
+
+.alert-danger {
+  background-color: #E53935;
+  color: #FFFFFF;
+}
+
+.alert-warning {
+  background-color: #FDD835;
+  color: #000000;
+}
+
+.alert-light {
+  background-color: #F5F5F5;
+  color: #000000;
+}
+
+.alert-dark {
+  background-color: #212121;
+  color: #FFFFFF;
+}
+
+div.alert {
+  width: 320px;
+  padding: 23px 25px;
+  border-radius: 5px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: default;
+  transition: visibility 0.25s;
+}
+div.alert .alert-title {
+  font-size: 1em;
+}
+div.alert .alert-body {
+  font-size: 0.85em;
+}
+div.alert .alert-close {
+  font-size: 0.8em;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+div.alert .alert-close:hover {
+  opacity: 1;
+}
+@keyframes alertAnimationOpen {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+div.alert .alert-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  z-index: 1000;
+  background-color: white;
+  opacity: 0.8;
+  animation: progress 5s linear;
+}
+@keyframes progress {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.appear {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.border {
+  border: 1px solid #757575 !important;
+}
+
+.border-top {
+  border-top: 1px solid #757575 !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #757575 !important;
+}
+
+.border-right {
+  border-right: 1px solid #757575 !important;
+}
+
+.border-left {
+  border-left: 1px solid #757575 !important;
+}
+
+.border-top-0 {
+  border-top: none;
+  border-right: 1px solid #757575 !important;
+  border-bottom: 1px solid #757575 !important;
+  border-left: 1px solid #757575 !important;
+}
+
+.border-bottom-0 {
+  border-top: 1px solid #757575 !important;
+  border-right: 1px solid #757575 !important;
+  border-bottom: none;
+  border-left: 1px solid #757575 !important;
+}
+
+.border-right-0 {
+  border-top: 1px solid #757575 !important;
+  border-right: none;
+  border-bottom: 1px solid #757575 !important;
+  border-left: 1px solid #757575 !important;
+}
+
+.border-left-0 {
+  border-top: 1px solid #757575 !important;
+  border-right: 1px solid #757575 !important;
+  border-bottom: 1px solid #757575 !important;
+  border-left: none;
+}
+
+/*
+    Esse arquivo possui todas as definições de cores predefinidas para o desenvolvimento de templates.
+    Uma vez que o site esteja pronto, as corres do site forem decididas, o arquivo pode ser compilado,
+    removendo as corres não utilizadas.
+
+    Programdor      : Vicente Cesar, Matheus Pires
+    Nome da plaheta : Material desing
+*/
+/***********************************************************************************************************
+    Paleta de cores
+************************************************************************************************************/
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep-purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Gray */
+/* Blue Gray */
+/* Black */
+/* White */
+.border-primary {
+  border-color: #2979FF !important;
+}
+
+.border-secondary {
+  border-color: #757575 !important;
+}
+
+.border-success {
+  border-color: #00C853 !important;
+}
+
+.border-danger {
+  border-color: #E53935 !important;
+}
+
+.border-warning {
+  border-color: #FDD835 !important;
+}
+
+.border-light {
+  border-color: #F5F5F5 !important;
+}
+
+.border-dark {
+  border-color: #212121 !important;
+}
+
+.rounded {
+  border-radius: 3px !important;
+}
+
+.rounded-top {
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
+}
+
+.rounded-bottom {
+  border-bottom-left-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
+
+.rounded-right {
+  border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
+
+.rounded-left {
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+}
+
+.rounded-pill {
+  border-radius: 32px !important;
+}
+
+.rounded-sm {
+  border-radius: 2px !important;
+}
+
+.rounded-lg {
+  border-radius: 6px !important;
+}
+
+/*
+    Esse arquivo possui todas as definições de cores predefinidas para o desenvolvimento de templates.
+    Uma vez que o site esteja pronto, as corres do site forem decididas, o arquivo pode ser compilado,
+    removendo as corres não utilizadas.
+
+    Programdor      : Vicente Cesar, Matheus Pires
+    Nome da plaheta : Material desing
+*/
+/***********************************************************************************************************
+    Paleta de cores
+************************************************************************************************************/
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep-purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Gray */
+/* Blue Gray */
+/* Black */
+/* White */
+.btn-primary {
+  background-color: #2979FF;
+  border-color: #2979FF !important;
+  color: #FFFFFF;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+.btn-primary:hover {
+  background-color: #2962FF;
+  border-color: #2962FF !important;
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: #757575;
+  border-color: #757575 !important;
+  color: #FFFFFF;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+.btn-secondary:hover {
+  background-color: #616161;
+  border-color: #616161 !important;
+  color: #FFFFFF;
+}
+
+.btn-success {
+  background-color: #00C853;
+  border-color: #00C853 !important;
+  color: #FFFFFF;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+.btn-success:hover {
+  background-color: #4CAF50;
+  border-color: #4CAF50 !important;
+  color: #FFFFFF;
+}
+
+.btn-danger {
+  background-color: #E53935;
+  border-color: #E53935 !important;
+  color: #FFFFFF;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+.btn-danger:hover {
+  background-color: #D32F2F;
+  border-color: #D32F2F !important;
+  color: #FFFFFF;
+}
+
+.btn-warning {
+  background-color: #FDD835;
+  border-color: #FDD835 !important;
+  color: #000000;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+.btn-warning:hover {
+  background-color: #FBC02D;
+  border-color: #FBC02D !important;
+  color: #000000;
+}
+
+.btn-light {
+  background-color: #F5F5F5;
+  border-color: #F5F5F5 !important;
+  color: #000000;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+.btn-light:hover {
+  background-color: #E0E0E0;
+  border-color: #E0E0E0 !important;
+  color: #000000;
+}
+
+.btn-dark {
+  background-color: #212121;
+  border-color: #212121 !important;
+  color: #FFFFFF;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+.btn-dark:hover {
+  background-color: #000000;
+  border-color: #000000 !important;
+  color: #FFFFFF;
+}
+
+.btn-lg {
+  font-size: 1.2em !important;
+  padding: 0.9rem 1.7rem !important;
+}
+
+.btn-sm {
+  font-size: 0.75em !important;
+  padding: 0.6rem 1.7rem !important;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border-color: #2979FF !important;
+  color: #2979FF;
+  transition: background-color 0.25s, color 0.25s;
+}
+.btn-outline-primary:hover {
+  background-color: #2979FF;
+  border-color: #2979FF !important;
+  color: #FFFFFF;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  border-color: #757575 !important;
+  color: #757575;
+  transition: background-color 0.25s, color 0.25s;
+}
+.btn-outline-secondary:hover {
+  background-color: #757575;
+  border-color: #757575 !important;
+  color: #FFFFFF;
+}
+
+.btn-outline-success {
+  background-color: transparent;
+  border-color: #00C853 !important;
+  color: #00C853;
+  transition: background-color 0.25s, color 0.25s;
+}
+.btn-outline-success:hover {
+  background-color: #00C853;
+  border-color: #00C853 !important;
+  color: #FFFFFF;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  border-color: #E53935 !important;
+  color: #E53935;
+  transition: background-color 0.25s, color 0.25s;
+}
+.btn-outline-danger:hover {
+  background-color: #E53935;
+  border-color: #E53935 !important;
+  color: #FFFFFF;
+}
+
+.btn-outline-warning {
+  background-color: transparent;
+  border-color: #FDD835 !important;
+  color: #FDD835;
+  transition: background-color 0.25s, color 0.25s;
+}
+.btn-outline-warning:hover {
+  background-color: #FDD835;
+  border-color: #FDD835 !important;
+  color: #000000;
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  border-color: #F5F5F5 !important;
+  color: #F5F5F5;
+  transition: background-color 0.25s, color 0.25s;
+}
+.btn-outline-light:hover {
+  background-color: #F5F5F5;
+  border-color: #F5F5F5 !important;
+  color: #000000;
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  border-color: #212121 !important;
+  color: #212121;
+  transition: background-color 0.25s, color 0.25s;
+}
+.btn-outline-dark:hover {
+  background-color: #212121;
+  border-color: #212121 !important;
+  color: #FFFFFF;
+}
+
+button.btn {
+  font-size: 1.1em;
+  width: auto;
+  height: auto;
+  padding: 0.65rem 1.6rem;
+  font-weight: 400;
+  border-radius: 4px;
+  border: 1px solid;
+  cursor: pointer;
+  outline: none;
+}
+
+a.btn {
+  font-size: 1.1em;
+  width: auto;
+  height: auto;
+  padding: 0.7rem 1.6rem;
+  font-weight: 400;
+  border-radius: 4px;
+  border: 1px solid;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+/*
+    Esse arquivo possui todas as definições de cores predefinidas para o desenvolvimento de templates.
+    Uma vez que o site esteja pronto, as corres do site forem decididas, o arquivo pode ser compilado,
+    removendo as corres não utilizadas.
+
+    Programdor      : Vicente Cesar, Matheus Pires
+    Nome da plaheta : Material desing
+*/
+/***********************************************************************************************************
+    Paleta de cores
+************************************************************************************************************/
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep-purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Gray */
+/* Blue Gray */
+/* Black */
+/* White */
+.text-primary {
+  color: #2979FF !important;
+}
+
+.text-secondary {
+  color: #757575 !important;
+}
+
+.text-success {
+  color: #00C853 !important;
+}
+
+.text-danger {
+  color: #E53935 !important;
+}
+
+.text-warning {
+  color: #FDD835 !important;
+}
+
+.text-light {
+  color: #F5F5F5 !important;
+}
+
+.text-dark {
+  color: #212121 !important;
+}
+
+/*
+    Esse arquivo possui todas as definições de cores predefinidas para o desenvolvimento de templates.
+    Uma vez que o site esteja pronto, as corres do site forem decididas, o arquivo pode ser compilado,
+    removendo as corres não utilizadas.
+
+    Programdor      : Vicente Cesar, Matheus Pires
+    Nome da plaheta : Material desing
+*/
+/***********************************************************************************************************
+    Paleta de cores
+************************************************************************************************************/
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep-purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Gray */
+/* Blue Gray */
+/* Black */
+/* White */
+.bg-primary {
+  background-color: #2979FF !important;
+}
+
+.bg-secondary {
+  background-color: #757575 !important;
+}
+
+.bg-success {
+  background-color: #00C853 !important;
+}
+
+.bg-danger {
+  background-color: #E53935 !important;
+}
+
+.bg-warning {
+  background-color: #FDD835 !important;
+}
+
+.bg-light {
+  background-color: #F5F5F5 !important;
+}
+
+.bg-dark {
+  background-color: #212121 !important;
+}
+
+@font-face {
+  font-family: "BlueberryIcons";
+  src: url("../fonts/icomoon.ttf");
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "BlueberryIcons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "";
+}
+
+.icon-e-mail:before {
+  content: "";
+}
+
+.icon-password:before {
+  content: "";
+}
+
+.icon-arrow-left:before {
+  content: "";
+}
+
+.icon-arrow-right:before {
+  content: "";
+}
+
+.icon-location:before {
+  content: "";
+}
+
+.icon-search:before {
+  content: "";
+}
+
+.icon-shopping-cart:before {
+  content: "";
+}
+
+/*
+    Esse arquivo possui todas as definições de cores predefinidas para o desenvolvimento de templates.
+    Uma vez que o site esteja pronto, as corres do site forem decididas, o arquivo pode ser compilado,
+    removendo as corres não utilizadas.
+
+    Programdor      : Vicente Cesar, Matheus Pires
+    Nome da plaheta : Material desing
+*/
+/***********************************************************************************************************
+    Paleta de cores
+************************************************************************************************************/
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep-purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Gray */
+/* Blue Gray */
+/* Black */
+/* White */
+/************************************************************************************
+*                                                                                   *
+*   INPUT TEXT NORMAL                                                               *
+*                                                                                   *
+************************************************************************************/
+.input-control .icon {
+  color: #9E9E9E;
+}
+
+.input-text-primary {
+  color: #212121;
+  border-color: #BDBDBD !important;
+  background-color: #FFFFFF;
+}
+.input-text-primary:focus {
+  color: #212121;
+  border-color: #2979FF !important;
+  background-color: #FFFFFF;
+}
+.input-text-primary:focus ~ .icon {
+  color: #2979FF;
+}
+.input-text-primary::placeholder {
+  color: #9E9E9E;
+}
+
+.input-text-secondary {
+  color: #212121;
+  border-color: #BDBDBD !important;
+  background-color: #FFFFFF;
+}
+.input-text-secondary:focus {
+  color: #212121;
+  border-color: #757575 !important;
+  background-color: #FFFFFF;
+}
+.input-text-secondary:focus ~ .icon {
+  color: #757575;
+}
+.input-text-secondary::placeholder {
+  color: #9E9E9E;
+}
+
+.input-text-success {
+  color: #212121;
+  border-color: #BDBDBD !important;
+  background-color: #FFFFFF;
+}
+.input-text-success:focus {
+  color: #212121;
+  border-color: #00C853 !important;
+  background-color: #FFFFFF;
+}
+.input-text-success:focus ~ .icon {
+  color: #00C853;
+}
+.input-text-success::placeholder {
+  color: #9E9E9E;
+}
+
+.input-text-danger {
+  color: #212121;
+  border-color: #BDBDBD !important;
+  background-color: #FFFFFF;
+}
+.input-text-danger:focus {
+  color: #212121;
+  border-color: #E53935 !important;
+  background-color: #FFFFFF;
+}
+.input-text-danger:focus ~ .icon {
+  color: #E53935;
+}
+.input-text-danger::placeholder {
+  color: #9E9E9E;
+}
+
+.input-text-warning {
+  color: #212121;
+  border-color: #BDBDBD !important;
+  background-color: #FFFFFF;
+}
+.input-text-warning:focus {
+  color: #212121;
+  border-color: #FDD835 !important;
+  background-color: #FFFFFF;
+}
+.input-text-warning:focus ~ .icon {
+  color: #FDD835;
+}
+.input-text-warning::placeholder {
+  color: #9E9E9E;
+}
+
+.input-text-light {
+  color: #212121;
+  border-color: #BDBDBD !important;
+  background-color: #FFFFFF;
+}
+.input-text-light:focus {
+  color: #212121;
+  border-color: #F5F5F5 !important;
+  background-color: #FFFFFF;
+}
+.input-text-light:focus ~ .icon {
+  color: #F5F5F5;
+}
+.input-text-light::placeholder {
+  color: #9E9E9E;
+}
+
+.input-text-dark {
+  color: #212121;
+  border-color: #BDBDBD !important;
+  background-color: #FFFFFF;
+}
+.input-text-dark:focus {
+  color: #212121;
+  border-color: #212121 !important;
+  background-color: #FFFFFF;
+}
+.input-text-dark:focus ~ .icon {
+  color: #212121;
+}
+.input-text-dark::placeholder {
+  color: #9E9E9E;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   INPUT TEXT ANIMATED                                                             *
+*                                                                                   *
+************************************************************************************/
+.input-animated-primary label {
+  color: #9E9E9E;
+}
+.input-animated-primary input {
+  border-bottom-color: #BDBDBD !important;
+}
+.input-animated-primary input:focus, .input-animated-primary input:valid {
+  border-bottom-width: 2px;
+  border-bottom-color: #2979FF !important;
+}
+.input-animated-primary input:focus ~ label, .input-animated-primary input:valid ~ label {
+  color: #2979FF;
+}
+
+.input-animated-secondary label {
+  color: #9E9E9E;
+}
+.input-animated-secondary input {
+  border-bottom-color: #BDBDBD !important;
+}
+.input-animated-secondary input:focus, .input-animated-secondary input:valid {
+  border-bottom-width: 2px;
+  border-bottom-color: #757575 !important;
+}
+.input-animated-secondary input:focus ~ label, .input-animated-secondary input:valid ~ label {
+  color: #757575;
+}
+
+.input-animated-success label {
+  color: #9E9E9E;
+}
+.input-animated-success input {
+  border-bottom-color: #BDBDBD !important;
+}
+.input-animated-success input:focus, .input-animated-success input:valid {
+  border-bottom-width: 2px;
+  border-bottom-color: #00C853 !important;
+}
+.input-animated-success input:focus ~ label, .input-animated-success input:valid ~ label {
+  color: #00C853;
+}
+
+.input-animated-danger label {
+  color: #9E9E9E;
+}
+.input-animated-danger input {
+  border-bottom-color: #BDBDBD !important;
+}
+.input-animated-danger input:focus, .input-animated-danger input:valid {
+  border-bottom-width: 2px;
+  border-bottom-color: #E53935 !important;
+}
+.input-animated-danger input:focus ~ label, .input-animated-danger input:valid ~ label {
+  color: #E53935;
+}
+
+.input-animated-warning label {
+  color: #9E9E9E;
+}
+.input-animated-warning input {
+  border-bottom-color: #BDBDBD !important;
+}
+.input-animated-warning input:focus, .input-animated-warning input:valid {
+  border-bottom-width: 2px;
+  border-bottom-color: #FDD835 !important;
+}
+.input-animated-warning input:focus ~ label, .input-animated-warning input:valid ~ label {
+  color: #FDD835;
+}
+
+.input-animated-light label {
+  color: #9E9E9E;
+}
+.input-animated-light input {
+  border-bottom-color: #BDBDBD !important;
+}
+.input-animated-light input:focus, .input-animated-light input:valid {
+  border-bottom-width: 2px;
+  border-bottom-color: #F5F5F5 !important;
+}
+.input-animated-light input:focus ~ label, .input-animated-light input:valid ~ label {
+  color: #F5F5F5;
+}
+
+.input-animated-dark label {
+  color: #9E9E9E;
+}
+.input-animated-dark input {
+  border-bottom-color: #BDBDBD !important;
+}
+.input-animated-dark input:focus, .input-animated-dark input:valid {
+  border-bottom-width: 2px;
+  border-bottom-color: #212121 !important;
+}
+.input-animated-dark input:focus ~ label, .input-animated-dark input:valid ~ label {
+  color: #212121;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   INPUT TEXT NORMAL                                                               *
+*                                                                                   *
+************************************************************************************/
+/************************************************************************************
+*                                                                                   *
+*   INPUT TEXT ANIMATED                                                             *
+*                                                                                   *
+************************************************************************************/
+/************************************************************************************/
+div.input-control,
+form.input-control {
+  position: relative;
+}
+div.input-control .input-text,
+form.input-control .input-text {
+  padding: 10px 17px;
+  font-size: 0.95em;
+  height: 50px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid;
+  transition: border 0.25s ease;
+}
+div.input-control .input-text-icon,
+form.input-control .input-text-icon {
+  padding: 15px 21px 15px 42px;
+  font-size: 0.95em;
+  height: 50px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid;
+  transition: border 0.25s ease;
+}
+div.input-control .icon,
+form.input-control .icon {
+  position: absolute;
+  font-size: 0.9em;
+  top: 18px;
+  left: 17px;
+  border: none;
+  transition: color 0.25s ease;
+}
+
+div.input-animated {
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+}
+div.input-animated label {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  cursor: text;
+  transition: all 0.2s;
+}
+div.input-animated input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid;
+  box-shadow: none;
+  background-color: transparent;
+}
+div.input-animated input:invalid {
+  outline: none;
+}
+div.input-animated input:focus ~ label, div.input-animated input:valid ~ label {
+  font-size: 0.9em;
+  top: -20px;
+  height: 0px;
+}
+
+/*
+    Esse arquivo possui todas as definições de cores predefinidas para o desenvolvimento de templates.
+    Uma vez que o site esteja pronto, as corres do site forem decididas, o arquivo pode ser compilado,
+    removendo as corres não utilizadas.
+
+    Programdor      : Vicente Cesar, Matheus Pires
+    Nome da plaheta : Material desing
+*/
+/***********************************************************************************************************
+    Paleta de cores
+************************************************************************************************************/
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep-purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Gray */
+/* Blue Gray */
+/* Black */
+/* White */
+/************************************************************************************
+*                                                                                   *
+*   SPINNER CIRCLE                                                                  *
+*                                                                                   *
+************************************************************************************/
+@keyframes spinnerCircle {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+/************************************************************************************
+*                                                                                   *
+*   SPINNER DOT                                                                     *
+*                                                                                   *
+************************************************************************************/
+@-webkit-keyframes spinnerDot {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spinnerDot {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dot {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes dot {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+/************************************************************************************
+*                                                                                   *
+*   SPINNER CUBE                                                                    *
+*                                                                                   *
+************************************************************************************/
+@-webkit-keyframes spinnerCube {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+@keyframes spinnerCube {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+/************************************************************************************
+*                                                                                   *
+*   SPINNER BOUNCE                                                                  *
+*                                                                                   *
+************************************************************************************/
+@-webkit-keyframes bounce {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/************************************************************************************
+*                                                                                   *
+*   SPINNER FADING CIRCLE                                                           *
+*                                                                                   *
+************************************************************************************/
+@-webkit-keyframes circleFadeDelay {
+  0%, 39%, 100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+@keyframes circleFadeDelay {
+  0%, 39%, 100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+/*
+    Esse arquivo possui todas as definições de cores predefinidas para o desenvolvimento de templates.
+    Uma vez que o site esteja pronto, as corres do site forem decididas, o arquivo pode ser compilado,
+    removendo as corres não utilizadas.
+
+    Programdor      : Vicente Cesar, Matheus Pires
+    Nome da plaheta : Material desing
+*/
+/***********************************************************************************************************
+    Paleta de cores
+************************************************************************************************************/
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep-purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Gray */
+/* Blue Gray */
+/* Black */
+/* White */
+/************************************************************************************
+*                                                                                   *
+*   SPINNER CIRCLE                                                                  *
+*                                                                                   *
+************************************************************************************/
+.spinner-primary {
+  border: 3px solid #2979FF !important;
+}
+
+.spinner-secondary {
+  border: 3px solid #757575 !important;
+}
+
+.spinner-success {
+  border: 3px solid #00C853 !important;
+}
+
+.spinner-danger {
+  border: 3px solid #E53935 !important;
+}
+
+.spinner-warning {
+  border: 3px solid #FDD835 !important;
+}
+
+.spinner-light {
+  border: 3px solid #F5F5F5 !important;
+}
+
+.spinner-dark {
+  border: 3px solid #212121 !important;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   SPINNER DOT                                                                     *
+*                                                                                   *
+************************************************************************************/
+.spinner-dot-primary .dot1, .spinner-dot-primary .dot2 {
+  background-color: #2979FF !important;
+}
+
+.spinner-dot-secondary .dot1, .spinner-dot-secondary .dot2 {
+  background-color: #757575 !important;
+}
+
+.spinner-dot-success .dot1, .spinner-dot-success .dot2 {
+  background-color: #00C853 !important;
+}
+
+.spinner-dot-danger .dot1, .spinner-dot-danger .dot2 {
+  background-color: #E53935 !important;
+}
+
+.spinner-dot-warning .dot1, .spinner-dot-warning .dot2 {
+  background-color: #FDD835 !important;
+}
+
+.spinner-dot-light .dot1, .spinner-dot-light .dot2 {
+  background-color: #F5F5F5 !important;
+}
+
+.spinner-dot-dark .dot1, .spinner-dot-dark .dot2 {
+  background-color: #212121 !important;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   SPINNER CUBE                                                                    *
+*                                                                                   *
+************************************************************************************/
+.spinner-cube-primary .cube {
+  background-color: #2979FF !important;
+}
+
+.spinner-cube-secondary .cube {
+  background-color: #757575 !important;
+}
+
+.spinner-cube-success .cube {
+  background-color: #00C853 !important;
+}
+
+.spinner-cube-danger .cube {
+  background-color: #E53935 !important;
+}
+
+.spinner-cube-warning .cube {
+  background-color: #FDD835 !important;
+}
+
+.spinner-cube-light .cube {
+  background-color: #F5F5F5 !important;
+}
+
+.spinner-cube-dark .cube {
+  background-color: #212121 !important;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   SPINNER BOUNCE                                                                  *
+*                                                                                   *
+************************************************************************************/
+.spinner-bounce-primary .bounce {
+  background-color: #2979FF !important;
+}
+
+.spinner-bounce-secondary .bounce {
+  background-color: #757575 !important;
+}
+
+.spinner-bounce-success .bounce {
+  background-color: #00C853 !important;
+}
+
+.spinner-bounce-danger .bounce {
+  background-color: #E53935 !important;
+}
+
+.spinner-bounce-warning .bounce {
+  background-color: #FDD835 !important;
+}
+
+.spinner-bounce-light .bounce {
+  background-color: #F5F5F5 !important;
+}
+
+.spinner-bounce-dark .bounce {
+  background-color: #212121 !important;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   SPINNER FADING CIRCLE                                                           *
+*                                                                                   *
+************************************************************************************/
+.fading-circle-primary .circleFade::before {
+  background-color: #2979FF !important;
+}
+
+.fading-circle-secondary .circleFade::before {
+  background-color: #757575 !important;
+}
+
+.fading-circle-success .circleFade::before {
+  background-color: #00C853 !important;
+}
+
+.fading-circle-danger .circleFade::before {
+  background-color: #E53935 !important;
+}
+
+.fading-circle-warning .circleFade::before {
+  background-color: #FDD835 !important;
+}
+
+.fading-circle-light .circleFade::before {
+  background-color: #F5F5F5 !important;
+}
+
+.fading-circle-dark .circleFade::before {
+  background-color: #212121 !important;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   SPINNER CIRCLE                                                                  *
+*                                                                                   *
+************************************************************************************/
+.spinner-circle {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  border: 3px solid #757575;
+  display: inline-block;
+  border-right-color: transparent !important;
+  border-radius: 50%;
+  animation: spinnerCircle 1s infinite linear;
+  -webkit-animation: spinnerCircle 1s infinite linear;
+  -moz-animation: spinnerCircle 1s infinite linear;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   SPINNER DOT                                                                     *
+*                                                                                   *
+************************************************************************************/
+.spinner-dot {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  -webkit-animation: spinnerDot 2s infinite linear;
+  animation: spinnerDot 2s infinite linear;
+}
+.spinner-dot .dot1, .spinner-dot .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #757575;
+  border-radius: 100%;
+  -webkit-animation: dot 2s infinite ease-in-out;
+  animation: dot 2s infinite ease-in-out;
+}
+.spinner-dot .dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   SPINNER CUBE                                                                    *
+*                                                                                   *
+************************************************************************************/
+.spinner-cube {
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  display: inline-block;
+}
+.spinner-cube .cube {
+  width: 33.33%;
+  height: 33.33%;
+  background-color: #757575;
+  float: left;
+  -webkit-animation: spinnerCube 1.3s infinite ease-in-out;
+  animation: spinnerCube 1.3s infinite ease-in-out;
+}
+.spinner-cube .cube:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.spinner-cube .cube:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.spinner-cube .cube:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.spinner-cube .cube:nth-child(4) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.spinner-cube .cube:nth-child(5) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.spinner-cube .cube:nth-child(6) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.spinner-cube .cube:nth-child(7) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.spinner-cube .cube:nth-child(8) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.spinner-cube .cube:nth-child(9) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   SPINNER BOUNCE                                                                  *
+*                                                                                   *
+************************************************************************************/
+.spinner-bounce {
+  width: 70px;
+  display: inline-block;
+}
+.spinner-bounce .bounce {
+  width: 18px;
+  height: 18px;
+  background-color: #757575;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bounce 1.4s infinite ease-in-out both;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+.spinner-bounce .bounce:nth-child(1) {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.spinner-bounce .bounce:nth-child(2) {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   SPINNER FADING CIRCLE                                                           *
+*                                                                                   *
+************************************************************************************/
+.spinner-fading-circle {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+.spinner-fading-circle .circleFade {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spinner-fading-circle .circleFade::before {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 15%;
+  background-color: #757575;
+  border-radius: 100%;
+  -webkit-animation: circleFadeDelay 1.2s infinite ease-in-out both;
+  animation: circleFadeDelay 1.2s infinite ease-in-out both;
+}
+.spinner-fading-circle .circleFade:nth-child(2) {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.spinner-fading-circle .circleFade:nth-child(3) {
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.spinner-fading-circle .circleFade:nth-child(4) {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.spinner-fading-circle .circleFade:nth-child(5) {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.spinner-fading-circle .circleFade:nth-child(6) {
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+.spinner-fading-circle .circleFade:nth-child(7) {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.spinner-fading-circle .circleFade:nth-child(8) {
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+.spinner-fading-circle .circleFade:nth-child(9) {
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.spinner-fading-circle .circleFade:nth-child(10) {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.spinner-fading-circle .circleFade:nth-child(11) {
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+.spinner-fading-circle .circleFade:nth-child(12) {
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+.spinner-fading-circle .circleFade:nth-child(2)::before {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.spinner-fading-circle .circleFade:nth-child(3)::before {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+.spinner-fading-circle .circleFade:nth-child(4)::before {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.spinner-fading-circle .circleFade:nth-child(5)::before {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+.spinner-fading-circle .circleFade:nth-child(6)::before {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+.spinner-fading-circle .circleFade:nth-child(7)::before {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+.spinner-fading-circle .circleFade:nth-child(8)::before {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.spinner-fading-circle .circleFade:nth-child(9)::before {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+.spinner-fading-circle .circleFade:nth-child(10)::before {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+.spinner-fading-circle .circleFade:nth-child(11)::before {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+.spinner-fading-circle .circleFade:nth-child(12)::before {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+
+/*
+    Esse arquivo possui todas as definições de cores predefinidas para o desenvolvimento de templates.
+    Uma vez que o site esteja pronto, as corres do site forem decididas, o arquivo pode ser compilado,
+    removendo as corres não utilizadas.
+
+    Programdor      : Vicente Cesar, Matheus Pires
+    Nome da plaheta : Material desing
+*/
+/***********************************************************************************************************
+    Paleta de cores
+************************************************************************************************************/
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep-purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Gray */
+/* Blue Gray */
+/* Black */
+/* White */
+.shadow-sm {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.35) !important;
+}
+
+/*
+    Esse arquivo possui todas as definições de cores predefinidas para o desenvolvimento de templates.
+    Uma vez que o site esteja pronto, as corres do site forem decididas, o arquivo pode ser compilado,
+    removendo as corres não utilizadas.
+
+    Programdor      : Vicente Cesar, Matheus Pires
+    Nome da plaheta : Material desing
+*/
+/***********************************************************************************************************
+    Paleta de cores
+************************************************************************************************************/
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep-purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Gray */
+/* Blue Gray */
+/* Black */
+/* White */
+table.table {
+  width: 500px;
+  min-width: 400px;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-spacing: 0;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+table.table thead {
+  display: table-header-group;
+  vertical-align: middle;
+}
+table.table thead tr {
+  border-bottom: 1px solid #BDBDBD;
+}
+table.table tbody {
+  align-self: center;
+}
+table.table tr {
+  text-align: left;
+}
+table.table th, table.table td {
+  padding: 12px 15px;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   REGULAR TABLE                                                                   *
+*                                                                                   *
+************************************************************************************/
+.table-regular-primary thead tr {
+  color: #FFFFFF;
+  border-bottom: none !important;
+}
+.table-regular-primary tbody tr {
+  border-bottom: 1px solid #BDBDBD;
+}
+.table-regular-primary thead tr {
+  background-color: #2979FF;
+}
+.table-regular-primary tbody tr:last-child {
+  border-bottom: 2px solid #2979FF;
+}
+
+.table-regular-secondary thead tr {
+  color: #FFFFFF;
+  border-bottom: none !important;
+}
+.table-regular-secondary tbody tr {
+  border-bottom: 1px solid #BDBDBD;
+}
+.table-regular-secondary thead tr {
+  background-color: #757575;
+}
+.table-regular-secondary tbody tr:last-child {
+  border-bottom: 2px solid #757575;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   STRIPED TABLE                                                                   *
+*                                                                                   *
+************************************************************************************/
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #F5F5F5;
+}
+
+/************************************************************************************
+*                                                                                   *
+*   BORDERED TABLE                                                                  *
+*                                                                                   *
+************************************************************************************/
+.table-bordered {
+  box-shadow: none !important;
+}
+.table-bordered thead th {
+  border-bottom: 2px solid #BDBDBD;
+}
+.table-bordered th {
+  border: 1px solid #BDBDBD;
+}
+.table-bordered td {
+  border: 1px solid #BDBDBD;
+}
+
+/*
+    Esse arquivo possui todas as definições de cores predefinidas para o desenvolvimento de templates.
+    Uma vez que o site esteja pronto, as corres do site forem decididas, o arquivo pode ser compilado,
+    removendo as corres não utilizadas.
+
+    Programdor      : Vicente Cesar, Matheus Pires
+    Nome da plaheta : Material desing
+*/
+/***********************************************************************************************************
+    Paleta de cores
+************************************************************************************************************/
+/* Red */
+/* Pink */
+/* Purple */
+/* Deep-purple */
+/* Indigo */
+/* Blue */
+/* Light Blue */
+/* Cyan */
+/* Teal */
+/* Green */
+/* Light Green */
+/* Lime */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Deep Orange */
+/* Brown */
+/* Gray */
+/* Blue Gray */
+/* Black */
+/* White */
+div.pagination {
+  display: inline-block;
+}
+div.pagination a {
+  color: #212121;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+div.pagination i {
+  opacity: 0.9;
+}
+div.pagination a.page-active {
+  background-color: #2979FF;
+  border-radius: 3px;
+  color: white;
+}
+div.pagination a:hover:not(.page-active) {
+  background-color: #F5F5F5;
+  border-radius: 3px;
+}
+div.pagination .previous {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+div.pagination .next {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.percentage::after {
+  content: "";
+  display: block;
+  background-color: #3d9970;
+}
+
+.percentage-20::after {
+  width: 20%;
+}
+
+.percentage-30::after {
+  width: 30%;
+}
+
+/*# sourceMappingURL=BlueberryCode-Framework.css.map */

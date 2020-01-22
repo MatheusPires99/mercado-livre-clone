@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'BlueberryIcons';
+    src:  url('../../../assets/fonts/icomoon.ttf');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'BlueberryIcons' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+    content: "\e902";
+}
+
+.icon-e-mail:before {
+    content: "\e900";
+}
+
+.icon-password:before {
+    content: "\e901";
+}
+
+.icon-user-solid-circle:before {
+    content: "\e90c";
+}
+
+.icon-arrow-left:before {
+    content: "\e904";
+}
+
+.icon-arrow-right:before {
+    content: "\e903";
+}
+
+.icon-location:before {
+    content: "\e907";
+}
+
+.icon-search:before {
+    content: "\e905";
+}
+
+.icon-shopping-cart:before {
+    content: "\e906";
+}
+
+.icon-keyboard_arrow_up:before {
+    content: "\e908";
+}
+
+.icon-keyboard_arrow_right:before {
+    content: "\e909";
+}
+
+.icon-keyboard_arrow_left:before {
+    content: "\e90a";
+}
+
+.icon-keyboard_arrow_down:before {
+    content: "\e90b";
+}
+
+.icon-credit-card:before {
+    content: "\e90d";
+}
+
+.icon-truck:before {
+    content: "\e90e";
+}
+
+.icon-minus:before {
+    content: "\e910";
+}
+
+.icon-plus:before {
+    content: "\e90f";
+}
+
+.icon-star:before {
+    content: "\e911";
+}
+
+.icon-talk:before {
+    content: "\e912";
+}
+
+.icon-whatsapp:before {
+    content: "\e915";
+}
+
+.icon-instagram:before {
+    content: "\e913";
+}
+
+.icon-facebook:before {
+    content: "\e914";
+}
+
+.icon-radio-button:before {
+    content: "\e917";
+}
+
+
+.icon-invoice:before {
+    content: "\e918";
+}
+
+.icon-barcode:before {
+    content: "\e916";
+}
+
+.icon-pencil:before {
+    content: "\e91a";
+}
+
+.icon-trash:before {
+    content: "\e919";
+}

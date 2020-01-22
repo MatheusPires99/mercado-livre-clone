@@ -1,0 +1,201 @@
+.main-container {
+    display: flex;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    max-width: 300px;
+    min-width: 210px;
+
+    .user-search {
+        margin: 16px 16px 8px 0;
+
+        h1 {
+            font-size: 26px;
+            font-weight: 600;
+        }
+    }
+
+    .quantity-results {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+
+    .filters-groups {
+        display: flex;
+        flex-direction: column;
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 32px;
+
+            .groud-title {
+                font-weight: 600;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .filter-group-option {
+                display: flex;
+                flex-direction: column;
+                font-weight: 300;
+
+                a {
+                    color: #666;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                a, .price-range-container {
+                    max-width: 137px;
+                }
+
+                // .price-range-container {
+                    
+                //     .price-range {
+                //         -webkit-appearance: none;
+                //         cursor: pointer;
+                //     }
+
+                //     .price-range::-webkit-slider-runnable-track {
+                //         width: 300px;
+                //         height: 5px;
+                //         background: #ccc;
+                //         border: none;
+                //         border-radius: 3px;
+                //     }
+                    
+                //     .price-range::-webkit-slider-thumb {
+                //         -webkit-appearance: none;
+                //         border: none;
+                //         height: 16px;
+                //         width: 16px;
+                //         border-radius: 32px;
+                //         background: #4583F2;
+                //         margin-top: -4px;
+                //     }
+                    
+                //     .price-range:focus {
+                //         outline: none;
+                //     }
+                // }
+            }
+        }
+    }
+}
+
+.results-search {
+    min-width: 510px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+
+    .search-result-list {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+        .results-item {
+            min-height: 220px;
+
+            .product-item {
+                display: flex;
+                background-color: #fff;
+                border-bottom: 1px solid #ddd;
+                padding: 20px 20px 20px 40px;
+
+                .item-image {
+                    min-width: 150px;
+                    height: 160px;
+                    margin-right: 44px;
+                    position: relative;
+                    
+                    img {
+                        width: 150px;
+                        object-fit: contain;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                .item-info-container {
+                    width: 70%;
+                    font-weight: 300;
+
+                    .item-info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        height: 100%;
+                        padding: 10px 0;
+
+                        .item-name {
+                            font-size: 20px;
+
+                            a:hover {
+                                text-decoration: underline;
+                            }
+                        }
+
+                        .price-review-container {
+                            display: flex;
+
+                            .item-price {
+                                font-size: 24px;
+                                font-weight: 400;
+                            }
+
+                            .item-review {
+                                display: flex;
+                                align-self: center;
+                                margin-left: 160px;
+
+                                .stars {
+                                    margin-right: 5px;
+                                }
+
+                                .review-quantity {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+
+                        .item-description {
+                            display: inline-block;
+
+                            .divided-times {
+                                margin-bottom: 14px;
+                            }
+
+                            .divided-times.free-interest,
+                            .delivery-price.free-delivery {
+                                color: #00a650;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination {
+        align-self: center;
+        margin-top: 30px;
+
+        a:hover:not(.page-active) {
+            background-color: #ddd;
+        }
+    }   
+}

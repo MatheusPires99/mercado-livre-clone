@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/css/Index.css">
+    <link rel="stylesheet" href="../styles/css/Main.css">
+    <link rel="stylesheet" href="../styles/css/Header.css">
+    <link rel="stylesheet" href="../styles/css/Footer.css">
+    <link rel="stylesheet" href="../styles/css/BlueberryCode-Framework.css">
+    <link rel="stylesheet" href="../styles/css/Carousel.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Página do produto</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="nav-container">
+            <div class="nav-row-1">
+                <div class="nav-logo-image">
+                    <img src="../../assets/img/Logotipo_MercadoLivre.png" alt="Logo da empresa">
+                </div>
+                <form class="nav-search-bar">
+                    <input type="text" placeholder="Buscar produtos...">
+                    <button class="icon-search" type="submit"></button>
+                </form>
+                <div class="nav-header-menu">
+                    <!-- <div class="nav-user nav-user-unlogged">
+                        <a class="nav-header-menu-item" href="#">Crie sua onta</a>
+                        <a class="nav-header-menu-item" href="#">Entre</a>
+                    </div> -->
+                    <div class="nav-user nav-user-logged">
+                        <div class="nav-header-menu-item header-menu-item-user">
+                            <div class="nav-header-user">
+                                <i class="icon-user-solid-circle"></i>
+                                <span class="nav-header-menu-user-name">Matheus Pires</span>
+                                <i class="icon-keyboard_arrow_down"></i>
+                            </div>
+                            <div class="nav-user-profile-dropdown">
+                                <div>
+                                    <h2>Matheus Pires</h2>
+                                    <span>matheushenriquepires99@gmail.com</span>
+                                    <a class="btn btn-primary" href="#">Minha conta</a>
+                                </div>
+                                <div>
+                                    <a href="#">Minhas compras</a>
+                                    <a href="#">Carrinho de compras</a>
+                                    <a href="#">Meus endereços</a>
+                                    <a href="#">Sair</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <a class="nav-header-menu-item" href="#">Compras</a>
+                    <a class="nav-header-menu-item" href="#">
+                        <i class="icon-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-row-2">
+                <!-- <div class="nav-cep-unlogged">
+                    <div id="pop-up-cep-unlogged">
+                        <i id="close-pop-up-cep" class="icon-close"></i>
+                        <h1>Digite o seu CEP</h1>
+                        <span>Você poderá ver custos e prazos de entrega precisos em tudo que procurar</span>
+                        <form class="form-cep-unlogged">
+                            <input type="text" placeholder="Informe um CEP">
+                            <button class="btn btn-primary" type="submit">Usar</button>
+                        </form>
+                    </div>
+                    <div id="nav-cep" class="nav-menu-cep">
+                        <i class="icon-location"></i>
+                        <div class="nav-cep-data nav-cep-data-unlogged">
+                            <span>Informe seu</span>
+                            <span>CEP</span>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="nav-cep-logged">
+                    <div id="pop-up-cep-logged">
+                        <i id="close-pop-up-cep" class="icon-close"></i>
+                        <h1>Selecione onde quer receber suas compras</h1>
+                        <span>Você poderá ver custos e prazos de entrega precisos em tudo que procurar</span>
+                        <div>
+                            <div class="all-user-cep">
+                                <label class="user-cep-container" for="cep-option0">
+                                   <input type="radio" id="cep-option0" value="0" name="cep-radio-group"> 
+                                   <div class="user-cep-data">
+                                        <div>
+                                            <span>Rua das Palmeiras</span>
+                                            <span>125</span>
+                                        </div>
+                                        <div>
+                                            <span>CEP:</span>
+                                            <span>35660405</span>
+                                            <span> - </span>
+                                            <span>Pará de Minas</span>
+                                            <span>, </span>
+                                            <span>MG</span>
+                                        </div>
+                                   </div>
+                                </label>
+                                <label class="user-cep-container" for="cep-option1">
+                                    <input type="radio" id="cep-option1" value="1" name="cep-radio-group"> 
+                                    <div class="user-cep-data">
+                                        <div>
+                                            <span>Rua das Palmeiras</span>
+                                            <span>125</span>
+                                        </div>
+                                        <div>
+                                            <span>CEP:</span>
+                                            <span>35660405</span>
+                                            <span> - </span>
+                                            <span>Pará de Minas</span>
+                                            <span>, </span>
+                                            <span>MG</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <form class="form-cep-logged">
+                            <legend>Em outro lugar</legend>
+                            <div class="input-control">
+                                <input class="input-text input-text-primary" type="text" placeholder="Informe um CEP">
+                                <button class="btn btn-primary" type="submit">Usar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="nav-cep" class="nav-menu-cep">
+                        <i class="icon-location"></i>
+                        <div class="nav-cep-data nav-cep-data-logged">
+                            <span class="nav-cep-send">Enviar para Matheus</span>
+                            <div>
+                                <span>Rua das Palmeiras</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav-menu-bar">
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-menu-item nav-menu-category">
+                        <a class="nav-menu-link" href="#">Categorias 
+                            <i class="icon-keyboard_arrow_down"></i> 
+                        </a>
+                        <ul class="nav-menu-category-dropdown">
+                            <li> <a href="#">Veículos</a></li>
+                            <li><a href="#">Tecnologia</a></li>
+                            <li><a href="#">Casa e eletrodomésticos</a></li>
+                            <li><a href="#">Acessórios para veículos</a></li>
+                            <li><a href="#">Esporte e lazer</a></li>
+                            <li><a href="#">Jóias e relógios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="#">Últimos lançamentos</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="#">Sobre nós</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="navigation-categorys">
+                <ul>
+                    <li>
+                        <a class="navigation-category-item" href="#" >Informática</a>
+                        <i class="icon-keyboard_arrow_right"></i>
+                    </li>
+                    <li>
+                        <a class="navigation-category-item" href="#">Smart phones</a>
+                        <i class="icon-keyboard_arrow_right"></i>
+                    </li>
+                    <li>
+                        <span class="navigation-product-name" href="#">Samsung Galaxy S10</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-container">
+                <div class="product-main-container">
+                    <div class="product-image">
+                        <div class="product-miniatures-img">
+                            <img src="../../assets/img/iphone-x.png" alt="Miniatura 1">
+                            <img src="../../assets/img/iphone-x-thumb-1.png" alt="Miniatura 2">
+                            <img src="../../assets/img/iphone-x-thumb-2.png" alt="Miniatura 3">
+                        </div>
+                        <img class="product-main-img" src="../../assets/img/galaxy-10.png" alt="Imagem do produto">
+                    </div>
+                    <div class="product-main-details">
+                        <div class="product-name">
+                            <h1>Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</h1>
+                        </div>  
+                        <div class="product-price">
+                            <span>R$</span>
+                            <span>3299</span>
+                        </div>
+                        <div class="product-extra-information">
+                            <div class="product-credit-card-times">
+                                <i class="icon-credit-card"></i>
+                                <span>12x</span>
+                                <span>R$</span>
+                                <span>358</span>
+                                <span>sem juros</span>
+                            </div>
+                            <div class="product-delivery-time">
+                                <div>
+                                    <i class="icon-truck"></i>
+                                    <span>Envio:</span>
+                                    <span>R$</span>
+                                    <span>20,00</span>
+                                    <span>a</span>
+                                    <span>R$</span>
+                                    <span>30,00</span>
+                                </div>
+                                <div class="calc-freight calc-freight-logged">
+                                    <div class="freight">
+                                        <span>Chegará em até</span>
+                                        <span>2</span>
+                                        <span>à</span>
+                                        <span>4</span>
+                                        <span>dias úteis</span>
+                                    </div>
+                                    <a href="#">Ver detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="shopping-container">
+                            <div class="first-row">
+                                <div class="product-quantity">
+                                    <span>Quantidade: </span>
+                                    <select name="" id="">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                                <div class="add-shopping-cart">
+                                    <button class="btn btn-outline-primary" type="submit">Adicionar ao carrinho</button>
+                                </div>
+                            </div>
+                            <div class="second-row">
+                                <button class="btn btn-primary" type="submit">Comprar agora</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="product-seaction product-recommendations-section">
+                    <div class="recommendations-header section-header">
+                        <h1 class="section-title">Produtos similares</h1>
+                    </div>
+
+                    <div class="recommendations-carousel">
+                        <button class="carousel-button carousel-button-left">
+                            <i class="icon-keyboard_arrow_left"></i>
+                        </button>
+                        <div class="carousel-track-container">
+                            <ul class="carousel-track">
+                                <li class="carousel-slide current-slide">
+                                    <a href="">
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/iphone-x-thumb-1.png" alt="">
+                                            </div>
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/iphone-x-thumb-2.png" alt="">
+                                            </div>
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/macbook-pro.png" alt="">
+                                            </div>  
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/galaxy-10.png" alt="">
+                                            </div>  
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/galaxy-10.png" alt="">
+                                            </div>  
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="carousel-slide current-slide">
+                                    <a href="">
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/iphone-x-thumb-1.png" alt="">
+                                            </div>
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/iphone-x-thumb-2.png" alt="">
+                                            </div>
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/macbook-pro.png" alt="">
+                                            </div>  
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/galaxy-10.png" alt="">
+                                            </div>  
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/galaxy-10.png" alt="">
+                                            </div>  
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="carousel-slide current-slide">
+                                    <a href="">
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/iphone-x-thumb-1.png" alt="">
+                                            </div>
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/iphone-x-thumb-2.png" alt="">
+                                            </div>
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/macbook-pro.png" alt="">
+                                            </div>  
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/galaxy-10.png" alt="">
+                                            </div>  
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                    <a href=""> 
+                                        <div class="product-card">
+                                            <div class="carousel-img-container">
+                                                <img class="carousel-image" src="../../assets/img/galaxy-10.png" alt="">
+                                            </div>  
+                                            <div class="product-card-price">
+                                                <span>R$</span>
+                                                <span>3000</span>
+                                            </div>
+                                            <span class="product-card-name">Samsung Galaxy S10 Dual SIM 128 GB Preto-prisma 8 GB RAM</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="carousel-button carousel-button-right">
+                            <i class="icon-keyboard_arrow_right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-seaction product-description-section">
+                    <div class="description-header section-header">
+                        <h1 class="section-title">Descrição</h1>
+                    </div>
+                    <div class="description-main-content">
+                        <p>
+                            Experiência visual excepcional
+                            <br>
+                            Assista suas séries e filmes favoritos com a melhor definição. Você terá cores brilhantes e detalhes precisos em todo o seu conteúdo. Desfrute ainda mais do melhor entretenimento graças à sua vasta tela e grandes ângulos de visão.
+                            <br>
+                            <br>
+                            Efeito bokeh incrível
+                            <br>
+                            A câmera traseira tripla permitirá que você tire fotos de alta qualidade com o famoso modo retrato de pouca profundidade de campo. Além disso, a câmera frontal permite tirar fotos de excelente qualidade, perfeita para fazer chamadas de vídeo e tirar selfies grupais.
+                            <br>
+                            <br>
+                            Grande capacidade de armazenamento
+                            <br>
+                            Não se preocupe com o armazenamento. Baixe seus aplicativos favoritos e salve todas as fotos e vídeos que você deseja. Se você precisar de mais, pode contar com até 1 TB através de um cartão microSD opcional.
+                            <br>
+                            <br>
+                            Reconhecimento facial para maior segurança
+                            <br>
+                            Sua tecnologia precisa de reconhecimento facial garante o acesso ao equipamento com segurança e facilidade. Mova o dispositivo mais perto do seu rosto para desbloqueá-lo instantaneamente e comece a desfrutar duma experiência incomparável.
+                            <br>
+                            <br>
+                            Inteligente e preditivo
+                            <br>
+                            O sistema operacional avançado Android 9.0 Pie aprende seus hábitos para adaptar-se à sua rotina e alcançar a máxima eficiência do seu equipamento. Além disso, o brilho é ajustado automaticamente dependendo da hora do dia e possui um gerenciador de bateria inteligente, o que limita o consumo de aplicativos que você não usa com frequência.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product-seaction product-avaliation-section">
+                    <div class="avaliation-header section-header">
+                        <h1 class="section-title">Opiniões sobre o produto</h1>
+                    </div>
+                    <div class="avaliation-sumary">
+                        <div class="rating-sumary">
+                            <h2>5.0</h2>
+                            <div class="rating-stars">
+                                <div class="star-container">
+                                    <i class="icon-star star-active"></i>
+                                    <i class="icon-star star-active"></i>
+                                    <i class="icon-star star-active"></i>
+                                    <i class="icon-star star-active"></i>
+                                    <i class="icon-star star-inative"></i>
+                                </div>
+                                <div class="review-summary-legend">
+                                    <span>Média entre</span>
+                                    <span>70</span>
+                                    <span>opiniões</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avaliation-comments">
+                        <div class="avaliation-comments-content">
+                            <div class="avaliation-comments-stars">
+                                <i class="icon-star star-active"></i>
+                                <i class="icon-star star-active"></i>
+                                <i class="icon-star star-active"></i>
+                                <i class="icon-star star-inative"></i>
+                                <i class="icon-star star-inative"></i>
+                            </div>
+                            <span class="avaliation-comments-title">Ótimo</span>
+                            <p class="avaliation-comments-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam excepturi unde deserunt dolorum. Explicabo omnis suscipit dolore et provident non deserunt a quidem quod vel tempora, at, deleniti cumque modi.</p>
+                        </div>
+                        <div class="avaliation-comments-content">
+                            <div class="avaliation-comments-stars">
+                                <i class="icon-star star-active"></i>
+                                <i class="icon-star star-active"></i>
+                                <i class="icon-star star-active"></i>
+                                <i class="icon-star star-active"></i>
+                                <i class="icon-star star-active"></i>
+                            </div>
+                            <span class="avaliation-comments-title">Ótimo</span>
+                            <p class="avaliation-comments-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ipsa nobis incidunt consequuntur, quod dolores cumque dicta culpa voluptatum ipsum quaerat blanditiis esse deserunt nemo earum explicabo. Necessitatibus, impedit earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, fugiat? Magni iusto blanditiis recusandae nemo. Itaque labore delectus esse quaerat, ratione sunt perferendis sapiente enim at quidem magni harum minima?</p>
+                        </div>
+                        <div class="avaliation-comments-content">
+                            <div class="avaliation-comments-stars">
+                                <i class="icon-star star-active"></i>
+                                <i class="icon-star star-active"></i>
+                                <i class="icon-star star-inative"></i>
+                                <i class="icon-star star-inative"></i>
+                                <i class="icon-star star-inative"></i>
+                            </div>
+                            <span class="avaliation-comments-title">Ótimo</span>
+                            <p class="avaliation-comments-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio explicabo, quas autem veniam laboriosam optio. Voluptate exercitationem illum error ipsum explicabo corrupti. Odit nihil cupiditate beatae animi laborum ad ratione?</p>
+                        </div>
+                        <a class="view-more" href="#">Ver todas as opiniões</a>
+                    </div>
+                </div>
+
+                <div class="product-section product-question-section">
+                    <div class="question-header section-header">
+                        <h1 class="section-title">Perguntas e respostas</h1>
+                    </div>
+                    <div class="question-main-content">
+                        <div class="send-question">
+                            <span class="questions-subtitle">Envie sua dúvida:</span>
+                            <form class="question-form">
+                                <textarea name="question" id="question" cols="30" rows="10" placeholder="Escreva uma pergunta..."></textarea>
+                                <div>
+                                    <button class="btn btn-primary" type="submit">Perguntar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="questions-container">
+                            <span class="questions-subtitle">Últimas perguntas</span>
+                            <div class="question-list">
+                                <div class="question-group">
+                                    <div class="questions-content">
+                                        <i class="icon-talk icon-question"></i>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi quibusdam harum repellendus modi maxime delectus tempora accusamus ex et ea, eius iure sint doloribus eum? Deleniti fugiat nostrum suscipit.</p>
+                                    </div>
+                                    <div class="questions-answer">
+                                        <i class="icon-talk icon-answer"></i>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus eveniet perferendis nihil, iure nam a deserunt facere voluptatibus consequatur mollitia eos sunt error neque, asperiores inventore molestias ratione minus! 
+                                            <span class="answer-date">21/10/2019 22:00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="question-group">
+                                    <div class="questions-content">
+                                        <i class="icon-talk icon-question"></i>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi quibusdam harum repellendus modi maxime delectus tempora accusamus ex et ea, eius iure sint doloribus eum? Deleniti fugiat nostrum suscipit.</p>
+                                    </div>
+                                    <div class="questions-answer">
+                                        <i class="icon-talk icon-answer"></i>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus eveniet perferendis nihil, iure nam a deserunt facere voluptatibus consequatur mollitia eos sunt error neque, asperiores inventore molestias ratione minus! 
+                                            <span class="answer-date">21/10/2019 22:00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="question-group">
+                                    <div class="questions-content">
+                                        <i class="icon-talk icon-question"></i>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sequi quibusdam harum repellendus modi maxime delectus tempora accusamus ex et ea, eius iure sint doloribus eum? Deleniti fugiat nostrum suscipit.</p>
+                                    </div>
+                                    <div class="questions-answer">
+                                        <i class="icon-talk icon-answer"></i>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus eveniet perferendis nihil, iure nam a deserunt facere voluptatibus consequatur mollitia eos sunt error neque, asperiores inventore molestias ratione minus! 
+                                            <span class="answer-date">21/10/2019 22:00</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <a class="view-more" href="#">Ver mais perguntas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row-1">
+                <div class="footer-my-account">
+                    <div class="footer-section-title">
+                        <h3>Minha Conta</h3>
+                    </div>
+                    <ul class="my-account-content">
+                        <li>
+                            <a href="#">Login / Cadastro</a>
+                        </li>
+                        <li>
+                            <a href="#">Minhas compras</a>
+                        </li>
+                        <li>
+                            <a href="#">Carrinho de compras</a>
+                        </li>
+                        <li>
+                            <a href="#">Meus endereços</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-support">
+                    <div class="footer-section-title">
+                        <h3>Central de atendimento</h3>
+                    </div>
+                    <div class="support-content">
+                        <div class="support-email">
+                            <div>
+                                <i class="icon-e-mail"></i>
+                                <span>E-mail</span>
+                            </div>
+                            <a href="#">exemplo@exemplo.com.br</a>
+                        </div>
+                        <div class="support-schedule">
+                            <span>Horário de entedimento</span>
+                            <span>Segunda a sexta-feira, das 08h às 17h.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-payment-methods">
+                    <div class="footer-section-title">
+                        <h3>Formas de pagamento</h3>
+                    </div>
+                    <ul class="payment-methods-content">
+                        <li>
+                            <img class="mastercard" src="../../assets/img/Formas de pagamento/MasterCard_icon.svg" alt="MasterCard">
+                        </li>
+                        <li class="visa-content">
+                            <img class="visa" src="../../assets/img/Formas de pagamento/Visa_icon.svg" alt="Visa">
+                        </li>
+                        <li>
+                            <img class="boleto" src="../../assets/img/Formas de pagamento/Boleto-icon.svg" alt="Boleto">
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-delivery-methods">
+                    <div class="footer-section-title">
+                        <h3>Formas de Entrega</h3>
+                    </div>
+                    <div class="delivery-methods-content">
+                        <img src="../../assets/img/Formas de entrega/Correios.svg" alt="Correios">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row-2">
+                <div class="footer-social-medias">
+                    <a class="btn-instagram" href="#" title="Instagram">
+                        <i class="icon-instagram"></i>
+                    </a>
+                    <a class="btn-facebook" href="#" title="Facebook">
+                        <i class="icon-facebook"></i>
+                    </a>
+                    <a class="btn-whatsapp" href="#" title="WhatsApp">
+                        <i class="icon-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="footer-company-information">
+                    <span>© 2019 Empresa. Todos os direitos reservados - CNPJ 99.999.999/9999-99 EMPRESA</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/header/nav-menu-cep.js" type="text/javascript"></script>
+    <script src="../js/main/recommendations-carousel.js" type="text/javascript"></script>    
+
+</body>
+
+</html>

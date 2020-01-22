@@ -1,0 +1,144 @@
+.main-container {
+  display: flex;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  width: 26%;
+  max-width: 300px;
+  min-width: 210px;
+}
+.filters .user-search {
+  margin: 16px 16px 8px 0;
+}
+.filters .user-search h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.filters .quantity-results {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.filters .filters-groups {
+  display: flex;
+  flex-direction: column;
+}
+.filters .filters-groups .filter-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.filters .filters-groups .filter-group .groud-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.filters .filters-groups .filter-group .filter-group-option {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+}
+.filters .filters-groups .filter-group .filter-group-option a {
+  color: #666;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.filters .filters-groups .filter-group .filter-group-option a:hover {
+  text-decoration: underline;
+}
+.filters .filters-groups .filter-group .filter-group-option a, .filters .filters-groups .filter-group .filter-group-option .price-range-container {
+  max-width: 137px;
+}
+
+.results-search {
+  min-width: 510px;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+.results-search .search-result-list {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.results-search .search-result-list .results-item {
+  min-height: 220px;
+}
+.results-search .search-result-list .results-item .product-item {
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 20px 20px 40px;
+}
+.results-search .search-result-list .results-item .product-item .item-image {
+  min-width: 150px;
+  height: 160px;
+  margin-right: 44px;
+  position: relative;
+}
+.results-search .search-result-list .results-item .product-item .item-image img {
+  width: 150px;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.results-search .search-result-list .results-item .product-item .item-info-container {
+  width: 70%;
+  font-weight: 300;
+}
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  padding: 10px 0;
+}
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info .item-name {
+  font-size: 20px;
+}
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info .item-name a:hover {
+  text-decoration: underline;
+}
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info .price-review-container {
+  display: flex;
+}
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info .price-review-container .item-price {
+  font-size: 24px;
+  font-weight: 400;
+}
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info .price-review-container .item-review {
+  display: flex;
+  align-self: center;
+  margin-left: 160px;
+}
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info .price-review-container .item-review .stars {
+  margin-right: 5px;
+}
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info .price-review-container .item-review .review-quantity {
+  font-size: 13px;
+}
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info .item-description {
+  display: inline-block;
+}
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info .item-description .divided-times {
+  margin-bottom: 14px;
+}
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info .item-description .divided-times.free-interest,
+.results-search .search-result-list .results-item .product-item .item-info-container .item-info .item-description .delivery-price.free-delivery {
+  color: #00a650;
+  font-weight: 400;
+}
+.results-search .pagination {
+  align-self: center;
+  margin-top: 30px;
+}
+.results-search .pagination a:hover:not(.page-active) {
+  background-color: #ddd;
+}
+
+/*# sourceMappingURL=index.css.map */

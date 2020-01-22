@@ -1,0 +1,285 @@
+html, body {
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    input, label {
+        font-size: 16px;
+    }
+}
+
+.main-container {
+    height: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.main-checkout-form {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding-top: 40px;
+    
+    .checkout-div {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+        position: relative;
+        
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    
+        .checkout-title {
+            margin-bottom: 35px;
+    
+            h1 {
+                font-size: 1.8em;
+                font-weight: 400;
+            }
+        }
+
+        .checkout-subtitle {
+            h3 {
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+        }
+        
+        .input-content {
+            margin-bottom: 20px;
+        }
+    
+        .checkout-double-input {
+            display: flex;
+    
+            div:nth-child(1) {
+                margin-right: 30px;
+            }
+        }
+    
+        .input-large-width {
+            width: 75%;
+        }
+    
+        .input-small-width {
+            width: 250px;
+        }
+    
+        .form-action {
+            float: right;
+            margin-top: 30px;
+        }
+    }
+
+    .send-to-other-address {
+
+        a {
+            color: #2979FF;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .inputs-container {
+        display: flex;
+        flex-direction: column;
+        padding-right: 160px;
+    }
+
+    .radio-button-container {
+
+        input {
+            display: none;
+
+            &:checked ~ .radio-button-content::before { 
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                border-left: .22222em solid #3483fa;
+            }
+
+            &:checked ~ .radio-button-content i {
+                color: #3483fa;
+            }
+        }
+
+        .radio-button-content {
+            display: flex;
+            border-radius: 3px;
+            padding: 15px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            position: relative;
+            transition: background-color 0.25s;
+
+            &:hover {
+                background-color: #f5f5f5;
+            }
+
+            i {
+                align-self: center;
+                margin-right: 20px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.main-order-summary {
+    width: 35%;
+    height: 100%;
+    margin-left: 40px;
+    background-color: #fff;
+    // box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding-top: 20px;
+
+    .summary-div {
+        display: flex;
+        flex-direction: column;
+
+        .summary-title {
+            margin-bottom: 25px;
+            padding: 40px 40px 0 40px;
+    
+            h1 {
+                font-size: 1.8em;
+                font-weight: 400;
+            }
+        }
+
+        .summary-container {
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+
+            .order-content {
+                display: flex;  
+                padding: 10px;
+
+                .order-image {
+                    margin-right: 15px;
+                    border: 1px solid #ccc;
+                    background-color: #fff;
+
+                    img {
+                        width: 75px;
+                    }
+                }
+
+                .order-product {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    .order-info {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .info-details-1 {
+                            display: flex;
+
+                            .product-quantity {
+                                display: flex;
+                                text-decoration: underline;
+                                margin-right: 5px;
+                                font-weight: 400;
+                            }
+
+                            .product-one-unity-price {
+                                font-weight: 300;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .info-delete {
+                            button {
+                                background-color: transparent;
+                                outline: none;
+                                border: none;
+                                cursor: pointer;
+
+                                i {
+                                    font-size: 18px;
+                                    color: #aaa;
+                                    transition: color 0.25s;
+
+                                    &:hover {
+                                        color: #E53935;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .order-price {
+            display: flex;
+            flex-direction: column;
+            padding: 0 40px;
+            margin-top: 20px;
+
+            div {
+                margin-bottom: 8px;
+            }
+
+            .order-subtotal,
+            .order-freight,
+            .order-total {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .order-subtotal,
+            .order-freight {
+                font-weight: 300;
+            }
+
+            .order-total {
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+
+        .summary-action {
+            padding: 20px 40px 40px 40px;
+            
+            button {
+                width: 100%;
+                font-size: 18px;
+                padding: 15px 32px;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #fff;
+    font-size: 13px;
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-weight: 300;
+    }
+}

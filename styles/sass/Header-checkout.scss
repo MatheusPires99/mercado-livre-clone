@@ -1,0 +1,26 @@
+header {
+    width: 100%;
+    background-color: #fff159;
+    border-bottom: 1px solid #e4d74f;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-logo-image {
+        display: block;
+    
+        img {
+            width: 134px;
+        }
+    }
+
+    // .nav-contact {
+        
+    // }
+}
